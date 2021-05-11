@@ -776,6 +776,9 @@ header .sec p {
   .logo {
     width: 30%;
   }
+  .popup, .modal-content {
+    height: 105%;
+}
 }
 
 @media (max-width: 400px) {
