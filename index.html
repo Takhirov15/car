@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Style css -->
+    <link rel="stylesheet" href="scss/style.css">
+
+    <!-- Fontawesome link -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.2.0/css/all.css">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/faw.webp" type="image/x-icon">
+
+    <!-- Website Title -->
+    <title>Lamborghini</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header__nav">
+            <a href="#"><img src="img/lamborghini.png" alt="#" class="logo"></a>
+
+            <!-- Burger-menu -->
+            <div class="burger-menu">
+                <span></span>
+            </div>
+            <div class="header-menu">
+                <nav>
+                    <ul>
+                        <li><a href="#">Модель</a></li>
+                        <li><a href="#">Дилеры</a></li>
+                        <li><a href="#">История</a></li>
+                        <li><a href="#">Дизайн</a></li>
+                        <li><a href="#">Магазин</a></li>
+                        <li><a href="#popup1"><i class="fal fa-comments-alt"></i></a></li>
+                        <li><a href="#" id="myBtn"><i class="fal fa-search"></i></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <!-- end burger-menu -->
+
+        <!-- Characteristic -->
+        <div class="charac">
+            <div class="header-item">
+                <p>Lamborghini</p>
+                <h1>Huracan evo</h1>
+                <a href="#">Посмотреть все</a>
+            </div>
+            <div class="characteristic">
+                <div class="kw">
+                    <h1>610 кВт</h1>
+                    <p>Мощность (квт)</p>
+                </div>
+                <div class="speed">
+                    <h1>325 км / ч</h1>
+                    <p>максимальная скорость</p>
+                </div>
+                <div class="sec">
+                    <h1>3.1 сек</h1>
+                    <p>0–100 км / ч</p>
+                </div>
+            </div>
+        </div>
+        <!-- end characteristic -->
+    </header>
+    <!-- end header -->
+
+    <!-- Main -->
+    <main>
+        <!-- Search modal -->
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close"><span class="close-s">Закрыть поиск</span>&times;</span>
+                <div class="modal-item">
+                    <div class="site-s">
+                        <h1>Lamborghini</h1>
+                        <p>Поиск по сайту</p>
+                    </div>
+                    <div class="container">
+                        <input type="text" placeholder="Search...">
+                        <div class="search"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end search modal -->
+
+        <!-- Chat modal -->
+        <div id="popup1" class="overlay">
+            <div class="popup">
+                <h1>Спросите у меня</h1>
+                <a class="close-p" href="#">&times;</a>
+                <nav>
+                    <ul>
+                        <li><a href="">Модели</a></li>
+                        <li><a href="">Дилеры</a></li>
+                        <li><a href="">Музей производительная линия</a></li>
+                        <li><a href="">Предприятия и история</a></li>
+                    </ul>
+                </nav>
+                <div id="contact-form" class="contact-form">
+                    <form class="form" @submit="onSubmit">
+                        <textarea name="message" v-model="contact.message" rows="4" placeholder="Спросите что-нибудь"></textarea>
+                        <button class="button">Отправить</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- end chat modal -->
+    </main>
+    <!-- end main -->
+
+    <!-- JavaScript link -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
