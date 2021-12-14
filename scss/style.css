@@ -184,7 +184,7 @@ header .sec p {
   padding: 20px;
   width: 100%;
   /* Could be more or less, depending on screen size */
-  height: 90%;
+  height: 100%;
 }
 
 .close {
